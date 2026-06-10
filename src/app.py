@@ -67,3 +67,22 @@ def signup_for_activity(activity_name: str, email: str):
     # Add student
     activity["participants"].append(email)
     return {"message": f"Signed up {email} for {activity_name}"}
+#Add 2 more sports related activities, 2 more artistic activities, and 2 more intellectual activities.
+activities["Basketball Team"] = {
+    "description": "Play competitive basketball games",
+    "schedule": "Tuesdays and Thursdays, 4:00 PM - 5:30 PM",
+    "max_participants": 15,
+    "participants": []
+}
+activities["Drama Club"] = {
+    "description": "Perform plays and participate in theatrical productions",
+    "schedule": "Wednesdays, 3:30 PM - 5:00 PM",
+    "max_participants": 10,
+    "participants": []
+}
+activities["Debate Team"] = {
+    "description": "Participate in academic debates and discussions",
+    "schedule": "Fridays, 4:00 PM - 5:30 PM",
+    "max_participants": 8,
+    "participants": []
+}
